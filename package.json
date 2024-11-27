@@ -4,7 +4,7 @@
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
   "icon": "img/icon.jpg",
   "version": "1.0.0",
-  "publisher": "Tim Eismar",
+  "publisher": "teismar",
   "license": "MIT",
   "repository": {
     "type": "github",
@@ -34,9 +34,6 @@
   "engines": {
     "vscode": "^1.95.0"
   },
-  "activationEvents": [
-    "onLanguage:regripper"
-  ],
   "main": "./extension.js",
   "contributes": {
     "languages": [
@@ -64,10 +61,11 @@
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish",
+    "login": "vsce login teismar",
     "lint": "npx jsonlint-cli ./language-configuration.json ./syntaxes/regripper.tmLanguage.json"
   },
   "devDependencies": {
-    "jsonlint-cli": "^1.0.1",
-    "vsce": "^2.15.0"
+    "@vscode/vsce": "^3.2.1",
+    "jsonlint-cli": "^1.0.1"
   }
 }
