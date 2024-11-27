@@ -2,9 +2,21 @@
   "name": "regripper---language-support",
   "displayName": "RegRipper - Language Support",
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
+  "icon": "./img/icon.jpg",
   "version": "1.0.0",
   "publisher": "Tim Eismar",
   "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/teismar/regripper-syntax-for-vscode"
+  },
+  "contributors": [
+  {
+    "name": "Tim Eismar",
+    "email": "eismartim@gmail.com",
+    "url": "https://teismar.de"
+  }
+  ],
   "engines": {
     "vscode": "^1.95.0"
   },
