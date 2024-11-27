@@ -3,7 +3,7 @@
   "displayName": "RegRipper - Language Support",
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability.",
   "icon": "img/icon.jpg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "teismar",
   "license": "MIT",
   "repository": {
