@@ -37,7 +37,7 @@ This extension does not add any configurable settings currently.
 
 ## Known Issues
 
-- No known issues at the moment. Please report any bugs or feature requests through the [GitHub Issues](https://github.com/teismar/regripper-extensions/issues) page.
+- No known issues at the moment. Please report any bugs or feature requests through the [GitHub Issues](https://github.com/teismar/regripper-syntax-for-vscode/issues) page.
 
 ---
 
