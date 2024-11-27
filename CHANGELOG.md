@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `icon.png` for the extension.
 - Unique TextMate scopes for elements like timestamps and hive names.
 - Support for `.regripper` files.
+- Added scripts to package and deploy
 
 ### Changed
 - Improved modular grammar structure for better maintenance and scalability.

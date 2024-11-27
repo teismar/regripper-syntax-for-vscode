@@ -2,7 +2,7 @@
   "name": "regripper---language-support",
   "displayName": "RegRipper - Language Support",
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
-  "icon": "./img/icon.jpg",
+  "icon": "img/icon.jpg",
   "version": "1.0.0",
   "publisher": "Tim Eismar",
   "license": "MIT",
@@ -11,25 +11,44 @@
     "url": "https://github.com/teismar/regripper-syntax-for-vscode"
   },
   "contributors": [
-  {
-    "name": "Tim Eismar",
-    "email": "eismartim@gmail.com",
-    "url": "https://teismar.de"
-  }
+    {
+      "name": "Tim Eismar",
+      "email": "eismartim@gmail.com",
+      "url": "https://teismar.de"
+    }
+  ],
+  "homepage": "https://github.com/teismar/regripper-syntax-for-vscode",
+  "keywords": [
+    "RegRipper",
+    "forensics",
+    "digital forensics",
+    "DFIR",
+    "incident response",
+    "syntax highlighting",
+    "registry analysis",
+    "VSCode extension"
+  ],
+  "categories": [
+    "Programming Languages"
   ],
   "engines": {
     "vscode": "^1.95.0"
   },
-  "categories": [
-    "Programming Languages"
+  "activationEvents": [
+    "onLanguage:regripper"
   ],
   "main": "./extension.js",
   "contributes": {
     "languages": [
       {
         "id": "regripper",
-        "aliases": ["RegRipper", "regripper"],
-        "extensions": [".regripper"],
+        "aliases": [
+          "RegRipper",
+          "regripper"
+        ],
+        "extensions": [
+          ".regripper"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -41,5 +60,14 @@
       }
     ],
     "documentSymbolProvider": true
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "lint": "npx jsonlint-cli ./language-configuration.json ./syntaxes/regripper.tmLanguage.json"
+  },
+  "devDependencies": {
+    "jsonlint-cli": "^1.0.1",
+    "vsce": "^2.15.0"
   }
 }
