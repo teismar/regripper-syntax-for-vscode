@@ -21,7 +21,7 @@
 ### Screenshot
 Syntax highlighting and outline in action:
 
-![img/screenshot.png](img/screenshot.png)
+![img/screenshot.png](https://github.com/teismar/regripper-syntax-for-vscode/blob/main/img/screenshot.png?raw=true)
 ---
 
 ## Requirements
