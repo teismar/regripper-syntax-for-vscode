@@ -6,8 +6,8 @@ function activate(context) {
         {
             provideDocumentSymbols(document) {
                 const symbols = [];
-                const sectionHeaderRegex = /^----------------------------------------$/;
-                const pluginRegex = /^[a-zA-Z0-9]+ v\.\d{8}/;
+                const sectionHeaderRegex = /^----------------------------------------$/; // Seperator Regex
+                const pluginRegex = /^[a-zA-Z0-9]+ v\.\d{8}/; // Plugin regex
                 const keyValueRegex = /^([\w\s\/\-]+)\s*=\s*(.*)$/; // Parent key regex
                 const indexedValueRegex = /^\s*(\d+)\s*=\s*(.*)$/; // Indexed sub-value regex
 
