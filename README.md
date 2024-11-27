@@ -21,6 +21,7 @@
 ### Screenshot
 Syntax highlighting and outline in action:
 
+![img/screenshot.png](img/screenshot.png)
 ---
 
 ## Requirements
