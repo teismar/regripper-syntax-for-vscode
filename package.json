@@ -3,7 +3,7 @@
   "displayName": "RegRipper - Language Support",
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability.",
   "icon": "img/icon.jpg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "teismar",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,7 @@
     "Programming Languages"
   ],
   "engines": {
-    "vscode": "^1.95.0"
+    "vscode": "^1.90.0"
   },
   "main": "./extension.js",
   "contributes": {

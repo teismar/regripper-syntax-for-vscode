@@ -7,11 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.2] - 2024-11-26
+## [1.0.3] - 2024-11-27
+- Support older VSCode Versions
+
+
+## [1.0.2] - 2024-11-27
 - Shortend Description of Plugin
 - Removed redundant Changelog from Readme
 
-## [1.0.1] - 2024-11-26
+## [1.0.1] - 2024-11-27
 - Remote Source for Image in Readme
 
 ## [1.0.0] - 2024-11-26
