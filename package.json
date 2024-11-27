@@ -1,7 +1,7 @@
 {
   "name": "regripper---language-support",
   "displayName": "RegRipper - Language Support",
-  "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
+  "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability.",
   "icon": "img/icon.jpg",
   "version": "1.0.1",
   "publisher": "teismar",

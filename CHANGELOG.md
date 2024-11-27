@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2024-11-26
+- Shortend Description of Plugin
+- Removed redundant Changelog from Readme
+
 ## [1.0.1] - 2024-11-26
 - Remote Source for Image in Readme
 

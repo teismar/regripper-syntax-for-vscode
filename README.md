@@ -42,20 +42,4 @@ This extension does not add any configurable settings currently.
 
 ---
 
-## Release Notes
-
-### 1.0.0
-
-- Initial release.
-- Features syntax highlighting for:
-  - Section headers
-  - Plugin information
-  - Key-value pairs
-  - Indexed values
-  - Registry paths and hive names
-  - Timestamps with a unique color
-- Outline navigation with support for named and unnamed sections.
-
----
-
 **Enjoy analyzing your RegRipper outputs efficiently with this extension!**
