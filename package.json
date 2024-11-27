@@ -4,6 +4,7 @@
   "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
   "version": "1.0.0",
   "publisher": "Tim Eismar",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.95.0"
   },
