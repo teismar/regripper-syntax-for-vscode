@@ -1,0 +1,32 @@
+{
+  "name": "regripper---language-support",
+  "displayName": "RegRipper - Language Support",
+  "description": "A syntax highlighting extension for RegRipper output files, supporting collapsible sections, error and warning detection, and enhanced Outline View navigation. Highlights plugin names, registry paths, timestamps, and values for improved readability and debugging. Ideal for forensic analysis and incident response workflows.",
+  "version": "1.0.0",
+  "publisher": "Tim Eismar",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "regripper",
+        "aliases": ["RegRipper", "regripper"],
+        "extensions": [".regripper"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "regripper",
+        "scopeName": "source.regripper",
+        "path": "./syntaxes/regripper.tmLanguage.json"
+      }
+    ],
+    "documentSymbolProvider": true
+  }
+}

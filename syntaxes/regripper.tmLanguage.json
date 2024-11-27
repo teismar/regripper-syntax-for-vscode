@@ -1,0 +1,167 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "RegRipper Output",
+    "scopeName": "source.regripper",
+    "patterns": [
+        {
+            "include": "#section-header"
+        },
+        {
+            "include": "#plugin-info"
+        },
+        {
+            "include": "#key-value-pairs"
+        },
+        {
+            "include": "#error-and-warning"
+        },
+        {
+            "include": "#hive-info"
+        },
+        {
+            "include": "#timestamps"
+        },
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#other-values"
+        }
+    ],
+    "repository": {
+        "section-header": {
+            "patterns": [
+                {
+                    "name": "keyword.control.regripper",
+                    "match": "^(----------------------------------------)$",
+                    "captures": {
+                        "0": {
+                            "name": "keyword.control"
+                        }
+                    }
+                }
+            ]
+        },
+        "plugin-info": {
+            "patterns": [
+                {
+                    "name": "entity.name.plugin.regripper",
+                    "match": "^[a-zA-Z0-9]+ v\\.\\d{8}",
+                    "captures": {
+                        "0": {
+                            "name": "entity.name.function"
+                        }
+                    }
+                },
+                {
+                    "name": "string.description.regripper",
+                    "match": "- .*$",
+                    "captures": {
+                        "0": {
+                            "name": "string.quoted.double"
+                        }
+                    }
+                }
+            ]
+        },
+        "key-value-pairs": {
+            "patterns": [
+                {
+                    "name": "entity.name.key.regripper",
+                    "match": "^([a-zA-Z0-9_/\\-\\s]+)\\s*=\\s*(.*)$",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.variable.key"
+                        },
+                        "2": {
+                            "name": "string.value"
+                        }
+                    }
+                }
+            ]
+        },
+        "error-and-warning": {
+            "patterns": [
+                {
+                    "name": "comment.warning.regripper",
+                    "match": "\\[WARNING\\].*$",
+                    "captures": {
+                        "0": {
+                            "name": "markup.changed.warning"
+                        }
+                    }
+                },
+                {
+                    "name": "comment.error.regripper",
+                    "match": "\\[ERROR\\].*$",
+                    "captures": {
+                        "0": {
+                            "name": "markup.deleted.error"
+                        }
+                    }
+                }
+            ]
+        },
+        "hive-info": {
+            "patterns": [
+                {
+                    "name": "constant.language.hive.regripper",
+                    "match": "\\((NTUSER\\.DAT|System|Software|.*?)\\)",
+                    "captures": {
+                        "0": {
+                            "name": "constant.language"
+                        }
+                    }
+                }
+            ]
+        },
+        "timestamps": {
+            "patterns": [
+                {
+                    "name": "constant.unique.timestamp.regripper",
+                    "match": "\\b\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}Z\\b",
+                    "captures": {
+                        "0": {
+                            "name": "constant.character.unique.timestamp"
+                        }
+                    }
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.regripper",
+                    "match": "not found\\.$",
+                    "captures": {
+                        "0": {
+                            "name": "comment.line.double-slash"
+                        }
+                    }
+                }
+            ]
+        },
+        "other-values": {
+            "patterns": [
+                {
+                    "name": "entity.other.value.regripper",
+                    "match": "\\bAppX[a-zA-Z0-9_.]+\\b",
+                    "captures": {
+                        "0": {
+                            "name": "entity.name.variable.other"
+                        }
+                    }
+                },
+                {
+                    "name": "variable.registry.path.regripper",
+                    "match": "\\bSoftware\\\\[a-zA-Z0-9\\\\_\\.\\-]+|Microsoft\\\\[a-zA-Z0-9\\\\_\\.\\-]+\\b",
+                    "captures": {
+                        "0": {
+                            "name": "variable.parameter.registry-path"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
